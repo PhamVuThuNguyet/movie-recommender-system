@@ -75,30 +75,30 @@ The dataset is provided by GroupLens and can be downloaded from here it contains
 
 ## Roadmap
 This Image sums it All up.
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/roadmap.jpeg"/>
+<img src="https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Images/roadmap.jpeg"/>
 ## Notebook for each step in Roadmap
-* [Exploratory Data Analysis(EDA) with PostgreSQ](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
-* [Feature engineering](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
-* [Model building and training](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
-* [Model Evaluation](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
-* [Deployment](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Server/app.py)
+* [Exploratory Data Analysis(EDA) with PostgreSQ](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
+* [Feature engineering](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Model building and training](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Model Evaluation](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Deployment](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Server/app.py)
 
 
 ## About Hybrid Algorithm 
-The hybrid recommendation system consists of the following sequence of steps [NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
+The hybrid recommendation system consists of the following sequence of steps [NOTEBOOK](https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Model/Hybrid%20recommendation%20algorithm.ipynb)
 ### Step 1. Collaborative filtering
 The main objective of collaborative filtering at this step is to learn features for different movies. The implementation of Collaborative filtering here performs "Feature learning" Using a variation of multivariate regression with gradient descent as an optimization algorithm, it takes as input user-item interaction matrix and simultaneously learns both the parameters for different users and features for different movies 
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step1.jpg" width="600" height="400"/>
+<img src="https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Images/step1.jpg" width="600" height="400"/>
 
 ### Step 2. Content-based filtering
 The content-based filtering here again is going to be an extension of multivariate regression but unlike collaborative filtering here I'm going to use the features for movies learned using collaborative filtering now to learn online web-application user parameter using content-based filtering thats unique to the user based on his/her web application movie ratings.
 
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step2.jpg" width="600" height="300"/>
+<img src="https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Images/step2.jpg" width="600" height="300"/>
 
 ### Step 3. Prediction
 Prediction (uses both the Features for movies learned using collaborative filtering and the Parameters unique to user learned using content-based filtering to recommend top-N recommendation) The prediction uses both the vectors for movies learned using collaborative filtering and the parameter unique to user learned using content-based filtering to recommend top-N recommendation
 
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step3.jpg" width="600" height="300"/>
+<img src="https://github.com/PhamVuThuNguyet/movie-recommender-system/blob/master/Images/step3.jpg" width="600" height="300"/>
 
 ## Usage
 Setup to run on localhost<br/>
@@ -123,7 +123,7 @@ pip install -r requirements.txt
 python app.py
 ```
 ## Contributing
-Your contributions are always welcome! Contribute by opening an [issue]() or a [pull request](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
+Your contributions are always welcome! Contribute by opening an [issue]() or a [pull request](). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
 
 ## References 
 [1]. [H. Zhang, F. Min, D. Ślęzak and B. Shi, "Cost-sensitive regression-based recommender system," 2015 International Conference on Machine Learning and Cybernetics (ICMLC), 2015, pp. 253-258, doi: 10.1109/ICMLC.2015.7340931.](https://ieeexplore.ieee.org/document/7340931)
